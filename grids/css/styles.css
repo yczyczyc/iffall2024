@@ -1,0 +1,50 @@
+/* shared class. selecting the grid class */
+.grid{
+    padding:0;
+}
+
+/* shared class. the images within grid class */
+.grid img{
+    width:90%; 
+    /* width is 90% of the parent li, which is 25% of the total page width*/
+}
+
+/* shared class. selecting list elements within */
+.grid li{
+    display:block;
+    width:25%;
+    text-align:center;
+    font-size:0.8rem;
+    margin-bottom:1rem;
+}
+
+
+
+/* selecting this specific list */
+.using-inline-block li{
+    display:inline-block;
+}
+
+/*solution to not wrapping 4-up bc browser recognizes the space character between elements */
+.using-inline-block{
+    font-size:0;
+    /* this does not affect .grid li text bc we have specified font-size:0.8rem, in higher specificity */
+}
+
+
+/* selecting specific list */
+/* applied to the parent element, ul; rather than the child elemnt, li */
+.using-flex{
+    display:flex; 
+    flex-wrap:wrap;
+}
+
+.using-grid{
+    display:grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* The fr unit stands for fraction, so the above rule is instructing our grid to have four columns, each with an equal fraction of the available space.*/
+}
+
+.using-grid li{
+    width:100%;
+}
