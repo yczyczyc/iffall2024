@@ -1,0 +1,167 @@
+/* global settings, text accents */
+*{
+    font-family: "range-sans-variable", sans-serif;
+    font-variation-settings: "wght" 400;
+    background-color:#EBE9E1;
+}
+
+.container{
+    width: 84%;
+    max-width: 900px;
+    margin:auto;
+}
+
+
+p{
+     font-size:1rem;
+     line-height: 1.6em;
+}
+
+@media (max-width: 680px) {
+    p{
+        font-size: 0.9em; 
+        line-height: 1.6em; 
+
+    }
+}
+@media (max-width: 480px) {
+    p{
+        font-size: 0.85em; 
+        line-height: 1.5em; 
+    }
+}
+
+.headings {
+    font-family: "Monarcha", sans-serif;
+    font-variation-settings: "wght" 300;
+    color:#E43D12;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+strong{
+    font-variation-settings: "wght" 600;
+}
+
+
+/* images */
+
+.step-image{
+    width:100%
+}
+
+
+.background-image{
+    padding:22% 0;
+    background-image: url("images/51806334321_b836323134_h-e1697212686432.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+
+/* specific sectioned text settings */
+#titleh2{
+    text-align:center;
+    margin-bottom:0;
+}
+h1 {
+    font-family: "Monarcha", sans-serif;
+    color: #E43D12;
+    font-size: 4em;
+    text-align:center;
+    margin:0;
+    
+}
+@media(max-width:540px){
+    h1{
+        font-size: 1.8em;
+    } 
+}
+@media(max-width:760px){
+    h1{
+        font-size: 3em;
+    } 
+}
+
+
+#card {
+    display: grid;
+    padding:1%;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap:1.2em;
+    font-size:.8em;
+ } 
+
+ @media (max-width: 640px) {
+    #cards {
+        font-size:.6em;
+        gap:0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    #cards {
+        font-size:.5em;
+        gap:0.8em;
+}
+}
+
+
+.notes{
+    font-size:.9em;
+    line-height: 1.35em;
+    font-style:italic;
+    color:#76867c; 
+    font-weight:600;
+}
+
+.list-of-ingredients {
+    font-style:italic;
+    line-height: 1.6em;
+}
+
+.instruction-grids{
+    display: grid;
+    gap: .1em;
+    grid-template-columns: 1fr 1fr;
+}
+
+.instruction-grids>div {
+    border: .8px dotted #E43D12; 
+}
+@media (max-width: 740px) {
+    .instruction-grids {
+        grid-template-columns: 1fr; 
+        gap: 0.75em; 
+    }
+}
+@media (max-width: 480px) {
+    .instruction-grids {
+        grid-template-columns: 1fr; 
+        gap: 0.5em; 
+}
+}
+
+.step-content{
+    margin:2%;
+}
+
+.step-content>div{
+    padding: 8%; 
+
+}
+
+.section-divider {
+    background-color:#E43D12;
+    height: .3px;
+    width: 100%;
+    margin: 2.4em 0;
+}
+
+footer{
+    padding:3em1.5%;
+    color:#E43D12
+}
+
+
+
