@@ -1,0 +1,691 @@
+body {
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 40px;
+}
+
+h1 {
+     font-size: 30px;
+     margin-bottom: 40px;
+}
+
+.button_container {
+    border: 1px solid #ddd;
+    margin: 0 10px 10px 0;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    float: left;
+    overflow: hidden;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+
+a#btn_spotify {
+    display: inline-block;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 10px 40px 0 40px;
+    background-color: #2ebd59;
+    border: 2px solid #2ebd59;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+a#btn_spotify:hover {
+    background-color: #fff;
+    border: 2px solid #000;
+    color: #000;
+}
+
+a#btn_amazon {
+    display: block;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    margin: auto;
+    margin-top: 75px;
+    padding-top: 8px;
+    background-color: #232f3e;
+    color: #fff;
+    text-align: center;
+    font-size: 60px;
+    transition: all .2s;
+}
+
+a#btn_amazon:hover {
+    background-color: #fc9a18;
+}
+
+a#btn_twitter {
+    display: inline-block;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin: auto;
+    margin-top: 105px;
+    padding: 10px 30px 0 30px;
+    background-color: #56cdf1;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a#btn_twitter:hover {
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2ebfec+0,28a5cb+100 */
+    background: rgb(46,191,236); /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  rgba(46,191,236,1) 0%, rgba(40,165,203,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  rgba(46,191,236,1) 0%,rgba(40,165,203,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  rgba(46,191,236,1) 0%,rgba(40,165,203,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2ebfec', endColorstr='#28a5cb',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+
+
+a#btn_indiegogo {
+    display: inline-block;
+    position: relative;
+    margin:auto;
+    margin-top: 100px;
+    padding: 8px 16px;
+    background-color: #fff;
+    color: #eb1478;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: -2px;
+    transition: all .2s;
+}
+
+a#btn_indiegogo:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #eb1478;
+    transition: all .5s;
+}
+
+a#btn_indiegogo:hover {
+    color: #fff;
+}
+
+a#btn_indiegogo:hover:before {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+a#btn_indiegogo span {
+    position: relative;
+    z-index: 10;
+}
+
+
+/* ideo */
+a#btn_ideo {
+    display: inline-block;
+    height: 45px;
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 100px;
+    padding: 10px 30px 0 30px;
+    color: #000;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative; 
+    overflow: hidden; 
+    transition: background-color 0.5s, color 0.5s, 
+}
+
+a#btn_ideo:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Underline pseudo-element */
+a#btn_ideo:after {
+    content: ''; /* pseudo-element for the underline */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1.5px;
+    width: 0; /* Set underline to be invisible in base state */
+    background-color: #000; /* Black color underline */
+    transition: width 0.5s ease; /* Growing effect */
+}
+
+a#btn_ideo:hover:after {
+    width: 100%; /* Expand underline fully */
+}
+
+
+
+
+/* lyft */
+
+#lyftimg {
+    width: 6dvh;
+    /* dvh = dynamic viewport height */
+    /* dvh refers to 1% of the height of the viewport in its current dynamic state.*/
+    display: block;
+    margin: auto;
+}
+
+a#btn_lyft {
+    display: inline-block;
+    height: 50px;
+    box-sizing: border-box;
+    margin: auto;
+    border-radius: 25px;
+    margin-top: 100px;
+    padding: 10px 30px;
+    color: #11111F;
+    transition: transform 0.5s ease, background-color 0.5s, border-color 0.5s, color 0.5s;
+    border: 2px solid #fdb0dc;
+    color: #fff;
+    position: relative;  /* Set position relative for the transformation */
+}
+
+a#btn_lyft:hover {
+    background-color: #fdcae7;
+    border: 2px solid #fff;
+    transform: translateX(50px); 
+    width:50%;
+}
+
+
+
+/* New York Times */
+
+#nyt{
+    width: 24px;
+    transform: translate(0, 50%); 
+    display: block;
+    margin: auto;
+    transition: transform 1.0s ease; 
+    transform-origin: center; /
+}
+
+a#btn_newyorker {
+    display: inline-block;
+    height: 65px;
+    width: 65px;
+    box-sizing: border-box;
+    border-radius: 35px;
+    margin: auto;
+    margin-top: 90px;
+    /* padding: 10px 30px 10px 30px; */
+    background-color: #ffffff;
+    color: #fff;
+    font-family: "adobe-caslon-pro", serif;
+    font-weight: normal;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: border 0.5s ease;
+}
+
+a#btn_newyorker:hover {
+    border: 0.5px solid black;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6), 
+    0 8px 40px rgba(0, 0, 0, 0.3); 
+    /* gradient shadow darker inside lighter outside */
+}
+
+a#btn_newyorker:hover #nyt {
+    transform: translate(0, 50%) rotate(360deg); /* Rotate the logo within the button */
+}
+
+
+/* pottermore */
+
+a#btn_pottermore {
+    margin-top:60px;
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    background-color: #3f109d; 
+    border: 3px solid #f8bb1f; 
+    border-radius: 50%; 
+    text-align: center;
+    position: relative; 
+    overflow: hidden; 
+    transition: transform 0.3s ease; 
+}
+
+a#btn_pottermore:hover {
+    transform: scale(1.1);
+}
+
+a#btn_pottermore span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+a#btn_pottermore img {
+    width: 75%; 
+}
+
+a#btn_pottermore:after {
+    content: '★'; 
+    position: absolute;
+    font-size: 6px; 
+    color: #f8bb1f; 
+    top: 50%; 
+    left: 50%;
+    opacity: 0; /* Hidden initially */
+    transform: translate(-50%, -50%); 
+    transition: opacity 0.3s ease; 
+}
+
+a#btn_pottermore:hover:after {
+    opacity: 1;
+    animation: random-bounce 2s infinite ease-in-out; 
+}
+
+@keyframes random-bounce {
+    0% {
+        top: 50%; 
+        left: 50%;
+    }
+    25% {
+        top: 30%; 
+        left: 80%; 
+    }
+    50% {
+        top: 80%; 
+        left: 20%; 
+    }
+    75% {
+        top: 50%; 
+        left: 90%;
+    }
+    100% {
+        top: 20%; 
+        left: 50%;
+    }
+}
+
+
+
+
+/* ibm */
+
+a#btn_ibm {
+    display: inline-block;
+    margin-top:80px;
+    padding: 5px 34px; 
+    background-color: #ffffff; 
+    color: #054ADA; 
+    text-decoration: none; 
+    border: 1px solid #000000; 
+    border-radius: 3px; 
+    transition: all 0.3s ease; 
+    position: relative; 
+    overflow: hidden;
+}
+
+
+a#btn_ibm span img {
+    width: 80px; 
+    vertical-align: middle; 
+
+}
+
+a#btn_ibm:hover {
+    background: linear-gradient(90deg, #054ADA, #00b6ad); 
+    color: #ffffff; 
+    border:none;
+
+}
+a#btn_ibm:hover span img {
+    filter: brightness(0) invert(1); 
+}
+
+
+
+
+
+/* apple */
+
+a#btn_apple {
+    display: block;
+    width: 60px;
+    height: 60px;
+    position: relative; /* Make it relative for positioning the pseudo-element */
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 100px;
+    padding-top: 8px;
+    background-color: #fff;
+    color: #000000; 
+    text-align: center;
+    font-size: 30px;
+    transition: color 0.2s; 
+    overflow: hidden; /* Hide overflow from the pseudo-element */
+}
+
+a#btn_apple:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%; 
+    height: 100%; 
+    background-color: #000000; /* Background color */
+    border-radius: 50%; /* Make it a circle */
+    transform: translate(-50%, -50%) scale(0); 
+    transition: transform 0.3s; /* Animate the scaling */
+    z-index: 0; /* Place behind the icon */
+}
+
+a#btn_apple:hover:before {
+    transform: translate(-50%, -50%) scale(1); /* Scale to full size */
+}
+
+a#btn_apple i {
+    position: relative; 
+    z-index: 1; /* Ensure icon above background */
+    transition: color 0.2s; /* Smooth transition for color */
+}
+
+a#btn_apple:hover i {
+    color: #fff; /* Change icon color on hover */
+}
+
+
+
+/* Container for the button */
+.button_container {
+    text-align: center;
+    margin-top: 100px; /* Adjust spacing as needed */
+}
+
+/* Button styling */
+a#btn_missouribotanicalgarden {
+    display: inline-block;
+    margin-top:60px;
+    height: 140px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    padding:50px 30px 20px 30px;
+    background-color: white; 
+    border: 4px solid  #02531a; 
+    color: #02531a; 
+    font-size: 16px;
+    font-family: "transat", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden; 
+}
+
+a#btn_missouribotanicalgarden .line1,
+a#btn_missouribotanicalgarden .line2 {
+    display: block; 
+}
+
+/* Logo styling */
+a#btn_missouribotanicalgarden .logo {
+    position: absolute;
+    top:30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0; /* Initially, the logo has 0 width */
+    opacity: 0; /* Hide logo initially */
+    transition: all 0.3s ease; 
+}
+
+/* Button hover effect */
+a#btn_missouribotanicalgarden:hover {
+    width: 240px; /* Expand button on hover to accommodate the logo */
+    padding: 70px 30px 20px 30px;
+    border-radius: 70px; /* Make the corners more rounded when hovered */
+}
+
+/* Show and expand the logo on hover */
+a#btn_missouribotanicalgarden:hover .logo {
+    width: 50px; 
+    opacity: 1; 
+}
+
+
+/* cartoon network */
+
+.button_container {
+    text-align: center; 
+    margin-top: 50px;
+}
+
+#btn_cartoonnetwork {
+    display: inline-block;
+    margin: auto;
+    margin-top:80px;
+    height: 200px;
+    width: 200px;  
+    box-sizing: border-box;
+    background-color: #ffffff; 
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.1s ease;
+}
+
+a#btn_cartoonnetwork span img {
+    width: 70%; 
+    transition: transform 0.1s ease; 
+}
+
+a#btn_cartoonnetwork:hover #CNL {
+    animation: bounce 0.6s ease infinite; /* Adjust duration for the bounce */
+}
+
+/* Keyframes for the bounce animation */
+@keyframes bounce {
+    0% {
+        transform: translate(0, 0);
+    }
+    10% {
+        transform: translate(20px, -30px);  
+    }
+    20% {
+        transform: translate(-10px, -20px); 
+    }
+    30% {
+        transform: translate(-20px, 15px);  
+    }
+    40% {
+        transform: translate(20px, -30px);  
+    }
+    50% {
+        transform: translate(-10px, -20px); 
+    }
+    60% {
+        transform: translate(-20px, 15px);  
+    }
+    80% {
+        transform: translate(10px, -10px); 
+    }
+    100% {
+        transform: translate(0, 0); 
+    }
+}
+
+
+
+/* instagram */
+
+a#btn_instagram {
+    display: inline-block;
+    margin-top: 70px;
+    position: relative;
+    width: 100px; 
+    height: 100px; 
+    overflow: hidden; 
+}
+
+a#btn_instagram img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    transition: opacity 0.2s ease-in-out, filter 0.1s ease; 
+}
+a#btn_instagram .img-2 {
+    opacity: 0;
+    width: 85%; 
+    height: 85%; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Flash twice before switching to img2 */
+a#btn_instagram:hover .img-1 {
+    animation: flash 1.2s ease-in-out 2; 
+    opacity: 0; 
+}
+
+a#btn_instagram:hover .img-2 {
+    opacity: 1; 
+    transition: opacity 0.7s ease-in-out; 
+}
+
+@keyframes flash {
+    0% {
+        filter: brightness(1);
+    }
+    10% {
+        filter: brightness(0) invert(1); /* 1st flash  */
+    }
+    15% {
+        filter: brightness(1);
+    }
+    25% {
+        filter: brightness(0) invert(1); /* 1st flash  */
+    }
+    50% {
+        filter: brightness(1);
+    }
+    60% {
+        filter: brightness(0) invert(1); /* 1st flash  */
+    }
+    65% {
+        filter: brightness(1);
+    }
+    75% {
+        filter: brightness(0) invert(1); /* 2nd flash */
+    }
+    100% {
+        filter: brightness(1);
+    }
+}
+
+
+/* COCA COLA */
+a#btn_cocacola {
+    display: inline-block;
+    margin-top: 70px;
+    position: relative;
+    width: 110px; 
+    height: 110px; 
+    overflow: hidden; 
+}
+
+a#btn_cocacola img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    transition: opacity 0.3s ease-in-out; 
+}
+
+a#btn_cocacola .img-2 {
+    opacity: 0;
+    width: 130%; 
+    height: 130%; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+a#btn_cocacola:hover .img-1 {
+    animation: shake 0.4s ease-in-out, fadeOut 0.3s forwards 0.1s; /* Shake first, then fade out with delay */
+}
+
+/* On hover, img2 fades in right after img1 fades out */
+a#btn_cocacola:hover .img-2 {
+    opacity: 1; 
+    transition: opacity 0.3s ease-in-out 0.5s; /
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+    15% {
+        transform: rotate(15deg); 
+    }
+    30% {
+        transform: rotate(30deg); 
+    }
+    40% {
+        transform: rotate(15deg); 
+    }
+    50% {
+        transform: rotate(30deg); 
+    }
+    75% {
+        transform: rotate(15deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
